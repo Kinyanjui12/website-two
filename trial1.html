@@ -1,0 +1,50 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stephen Kinyanjui - Kinya Enterprises</title>
+    <style>
+        body {
+            background-color: red;
+            font-size: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        #sun-image {
+            width: 300px; /* Set the width of your image */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Center the image */
+            margin: 0 auto;
+        }
+
+        button {
+            background-color: blue;
+            color: black;
+            padding: 10px 20px;
+            border: bold lightpink;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Stephen Kinyanjui</h1>
+    <p>Kinya Enterprises</p>
+    <p>We Offer Quality Services</p>
+    <img id="sun-image" src="sun.png" alt="Black and White Sun Image">
+    <button onclick="openNewWindow()">Open New Window</button>
+
+    <script>
+        function openNewWindow() {
+            var newWindow = window.open('', '_blank', 'width=400,height=300');
+            newWindow.document.body.style.backgroundColor = 'blue';
+            newWindow.document.body.style.color = 'black';
+            newWindow.document.write('<h1>Welcome</h1>');
+        }
+    </script>
+</body>
+</html>
+```
+
